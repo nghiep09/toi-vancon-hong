@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<b>Nhập số 1</b><input id="h1" type="number">
+<br>
+<b>Nhập số 2</b><input id="h2" type="number">
+<br>
+<button id="h3" onclick="tong_la()">Show</button>
+
+</body>
+</html>
+<script>
+    function tong_la(){
+        let a=document.getElementById('h1')
+        let b=document.getElementById('h2')
+        alert('tong_la'+(a.value*b.value))
+    }
+</script>
