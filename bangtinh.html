@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" id="h1" >
+<input type="number" id="h2" >
+<br>
+
+kết quả: <input type="text" id="h3">
+<button onclick="cong()"  id="h5">Add</button>
+<button onclick="tru()" id="h6">sub</button>
+<button onclick="nhan()" id="h7">Mul</button>
+<button onclick="chia()" id="h8">Div</button>
+</body>
+</html>
+<script>
+    function cong(){
+        let a=+document.getElementById("h1").value
+        let b=+document.getElementById("h2").value
+        document.getElementById("h3").value=a+b
+    }
+    function tru(){
+        let a=+document.getElementById("h1").value
+        let b=+document.getElementById("h2").value
+        document.getElementById("h3").value=a-b
+    }
+    function nhan(){
+        let a=+document.getElementById("h1").value
+        let b=+document.getElementById("h2").value
+        document.getElementById("h3").value=a*b
+    }
+    function chia(){
+        let a=+document.getElementById("h1").value
+        let b=+document.getElementById("h2").value
+        document.getElementById("h3").value=a/b
+    }
+</script>
